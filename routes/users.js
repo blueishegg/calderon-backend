@@ -8,7 +8,7 @@ router.get("/", async function (req, res, next) {
   res.send({
     message: "Here are the users",
     success: true,
-    payload: result,
+    payload: result || "no users",
   });
 });
 

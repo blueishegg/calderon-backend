@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-
+console.log(process.env.TESTINGTHREE);
 import app from "../app.js";
 import debugImport from "debug";
 import http from "http";

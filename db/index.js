@@ -1,14 +1,7 @@
 import pg from "pg";
-import { db } from "../config.js";
-
-console.log(process.env.TESTING);
 
 const pool = new pg.Pool({
-  user: db.user,
-  host: db.host,
-  database: db.database,
-  password: db.password,
-  port: db.port,
+  connectionString: process.env.POSTGRES_CONNECTION_URL,
 });
 
 export function query(text, params) {
