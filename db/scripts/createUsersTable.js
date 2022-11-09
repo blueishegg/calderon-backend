@@ -6,7 +6,7 @@ async function createUsersTable() {
         full_name TEXT,
         forename TEXT,
         surname TEXT,
-        dob, DATE,
+        dob DATE,
         description TEXT
     );`);
 }
