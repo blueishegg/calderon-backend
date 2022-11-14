@@ -10,7 +10,7 @@ import usersRouter from "./routes/users.js";
 var app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: process.env.CORSALLOWED,
   })
 );
 // view engine setup
